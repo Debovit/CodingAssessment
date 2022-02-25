@@ -9,7 +9,7 @@ public class MusicalPlay {
     //Time Complexity - O(26N) = O(N) - Max 26 alphabets can be there in the string, we would iterate through each character's frequency - N
 //Space Complexity - O(26) = O(1) - If there are 26 alphabets in the input string then we need to store all the characters in the map
     public int getMinDeletionToMakeGoodPlay(String musicalString) {
-        //Base case when the musicalPlay is null or contains only whitespace characters
+        //Base case when the musicalPlay is null or an empty string
         if (musicalString == null || musicalString.isEmpty()) return -1;
         return getMinDeletionCount(getCharacterFrequencyMap(musicalString));
     }
